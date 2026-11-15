@@ -11,7 +11,7 @@ es una herramienta contra sistemas reales.
 [![Java](https://img.shields.io/badge/Java-25-orange?logo=openjdk)](https://openjdk.org/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.1-6DB33F?logo=spring)](https://spring.io/projects/spring-boot)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![Estado](https://img.shields.io/badge/estado-v1%20en%20local-FF2E88)](#estado)
+[![Estado](https://img.shields.io/badge/MVP-listo%20en%20local-FF2E88)](#estado)
 [![Licencia](https://img.shields.io/badge/licencia-propietaria-A39E94)](#licencia)
 
 <br>
@@ -32,8 +32,8 @@ de práctica inventados.</sub>
 > against a simulated model; it will be switched on once it passes its evaluation set. It
 > does not host labs, it never hands over the flag, and every expedition starts with the
 > learner confirming they are authorized to practice on that environment. Spanish-first,
-> for desktop and mobile. Built with Java 25, Spring Boot 4 and PostgreSQL. The first
-> version is finished and tested locally; it is not deployed yet.
+> for desktop and mobile. Built with Java 25, Spring Boot 4 and PostgreSQL. The MVP is
+> complete and tested locally; it is not deployed yet.
 
 ---
 
@@ -128,11 +128,12 @@ reglas del producto es Java puro, separado de la web y de la base de datos.
 
 ## Estado
 
-**La primera versión está terminada y probada en local.** Tiene la portada, el acceso
-por enlace al correo, varias expediciones a la vez y el tablero en escritorio y en móvil.
-También el cofre de cada etapa, los tesoros y las notas, la exportación en Markdown, y la
-descarga y el borrado de los datos propios. La orientación con IA está construida y
-probada contra un modelo simulado: se encenderá cuando pase su conjunto de evaluación.
+**El MVP está terminado y probado en local.** Tiene la portada, el acceso por enlace al
+correo, varias expediciones a la vez y el tablero en escritorio y en móvil. También el
+cofre de cada etapa, los tesoros y las notas, la exportación en Markdown, y la descarga y
+el borrado de los datos propios. Cada persona ve las fechas en la zona horaria de su
+navegador. La orientación con IA está construida y probada contra un modelo simulado: se encenderá
+cuando pase su conjunto de evaluación.
 
 Cada regla del producto tiene su comprobación automática: pruebas unitarias y de
 integración, pruebas de mutación del filtro de banderas y recorridos en un navegador real
