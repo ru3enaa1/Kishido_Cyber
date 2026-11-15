@@ -2,8 +2,8 @@
 
 # Kishidō · 騎士道
 
-**Un acompañante con IA para aprender ciberseguridad practicando: te orienta por etapas
-mientras resuelves un reto, sin darte la solución, y guarda tus notas.**
+**Un acompañante para aprender ciberseguridad practicando: te guía por etapas mientras
+resuelves un reto, sin darte la solución, y guarda tus notas.**
 
 Y, con el mismo peso, lo que **no** hace: no aloja laboratorios, no entrega banderas y no
 es una herramienta contra sistemas reales.
@@ -11,28 +11,29 @@ es una herramienta contra sistemas reales.
 [![Java](https://img.shields.io/badge/Java-25-orange?logo=openjdk)](https://openjdk.org/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.1-6DB33F?logo=spring)](https://spring.io/projects/spring-boot)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![Estado](https://img.shields.io/badge/estado-en%20desarrollo-FF2E88)](#estado)
+[![Estado](https://img.shields.io/badge/estado-v1%20en%20local-FF2E88)](#estado)
 [![Licencia](https://img.shields.io/badge/licencia-propietaria-A39E94)](#licencia)
 
 <br>
 
-<img src="docs/capturas/01-tablero.png" width="900"
-     alt="El tablero de Kishidō: el paladín Shirogane vuela desde la izquierda y su espada señala el cofre de la etapa; detrás, un castillo japonés en grabado dentro de un corte de papel con paisaje; abajo a la izquierda, la barra de recorrido en la etapa 3 de 5; a la derecha, el pergamino de tesoros">
+<img src="docs/capturas/01-portada.png" width="900"
+     alt="La portada de Kishidō: el nombre enorme sobre fondo plateado, el paladín Shirogane en primer plano mirando con un ojo rojo por encima de los brazos cruzados y, a la derecha, el lema «El método, no la bandera» con la llamada «Abrir el cofre de muestra»">
 
-<sub>Diseño aprobado de la pantalla principal (mockup). El programa está en construcción:
-todavía no hay capturas del producto real.</sub>
+<sub>La portada del programa en marcha. Todas las capturas son del producto real, con datos
+de práctica inventados.</sub>
 
 </div>
 
-> **In English.** Kishidō is an AI companion for people learning offensive security
-> through practice challenges (CTFs and retired training machines). It walks the learner
-> through five stages, suggests which tools fit the stage they are in, and gives
-> spoiler-free guidance on the output they paste, so they keep solving the challenge
-> themselves. It keeps their findings as notes they can export as Markdown. It does not
-> host labs, it never hands over the flag, and it only works on environments the learner
-> is authorized to practice on. Spanish-first. Built with Java 25, Spring Boot 4 and
-> PostgreSQL. Currently in development: what you see here is the approved design, not
-> the running product.
+> **In English.** Kishidō is a companion for people learning offensive security through
+> practice challenges (CTFs and retired training machines). It walks the learner through
+> five stages, shows which tools fit the stage they are in, with their official
+> documentation and a short focus guide, and keeps their findings as notes they can export
+> as Markdown. Spoiler-free AI guidance on pasted terminal output is built and tested
+> against a simulated model; it will be switched on once it passes its evaluation set. It
+> does not host labs, it never hands over the flag, and it only works on environments the
+> learner is authorized to practice on. Spanish-first, for desktop and mobile. Built with
+> Java 25, Spring Boot 4 and PostgreSQL. The first version is finished and tested locally;
+> it is not deployed yet.
 
 ---
 
@@ -49,8 +50,8 @@ siguiente paso. Además, casi todo el material de apoyo está en inglés.
 |---|---|
 | **1 · Ordena el reto en cinco etapas** | Reconocimiento, entrada, pasillos, cuarto y cámara. Siempre se sabe en qué punto se está y qué queda |
 | **2 · Abre el cofre de la etapa** | Un catálogo fijo de herramientas para esa etapa, cada una con su documentación oficial, y una guía de enfoque. Funciona aunque la IA no esté disponible |
-| **3 · Orienta sin spoilers** | El aprendiz pega la salida de su terminal y recibe una pista sobre cómo leerla y qué mirar después. Nunca la bandera ni el paso exacto |
-| **4 · Guarda los tesoros** | Cada hallazgo se anota en su etapa, y se cuenta cuántos cuartos se han explorado |
+| **3 · Orienta sin spoilers** | El aprendiz pega la salida de su terminal y recibe una pista sobre cómo leerla y qué mirar después. Nunca la bandera ni el paso exacto. Está construida y probada contra un modelo simulado; se encenderá cuando pase su conjunto de evaluación |
+| **4 · Guarda los tesoros** | Cada hallazgo se anota en su etapa, y se cuenta cuántos cuartos se han explorado. Se pueden llevar varias expediciones a la vez, cada una con lo suyo |
 | **5 · Exporta las notas** | En Markdown, y sin el texto de la IA por defecto: las notas son de quien las escribió |
 
 ## El tablero
@@ -86,8 +87,29 @@ de escena con cada etapa del recorrido.
 </tr>
 </table>
 
-<sub>Todas las imágenes son arte propio del proyecto, montado sobre el diseño aprobado.
-No son capturas del programa.</sub>
+<sub>Capturas del tablero real a 1440 × 900, en una expedición de prueba con sus tesoros. El
+arte es propio del proyecto.</sub>
+
+## Más pantallas
+
+<table>
+<tr>
+<td width="50%"><img src="docs/capturas/07-cofre.png" alt="El cofre abierto en la etapa 1: el método de la etapa y las herramientas recomendadas, cada una con su explicación, un ejemplo de uso y su documentación oficial con la fecha en que se comprobó"></td>
+<td width="50%"><img src="docs/capturas/08-libro.png" alt="El libro de tesoros: los hallazgos, banderas y credenciales del laboratorio de cada etapa, con su nota y la opción de corregirlos"></td>
+</tr>
+<tr>
+<td><sub><b>El cofre.</b> Las herramientas de la etapa, con su documentación oficial, y una guía de enfoque. Funciona sin IA.</sub></td>
+<td><sub><b>El libro de tesoros.</b> Todo lo encontrado, etapa por etapa, listo para exportar en Markdown.</sub></td>
+</tr>
+<tr>
+<td><img src="docs/capturas/09-movil.png" alt="El tablero en un teléfono: el paladín y su espada en diagonal sobre la escena de la etapa, la barra de recorrido y el botón del cofre abajo"></td>
+<td></td>
+</tr>
+<tr>
+<td><sub><b>En el móvil.</b> El mismo tablero, recompuesto para una pantalla vertical.</sub></td>
+<td></td>
+</tr>
+</table>
 
 ## Principios
 
@@ -106,12 +128,18 @@ reglas del producto es Java puro, separado de la web y de la base de datos.
 
 ## Estado
 
-En desarrollo. Están cerrados el estudio previo, la marca, el diseño del tablero y la
-arquitectura; la construcción empieza por los cimientos (compilación, pruebas, datos y
-seguridad). La primera versión será una aplicación web en español, para escritorio.
+**La primera versión está terminada y probada en local.** Tiene la portada, el acceso
+por enlace al correo, varias expediciones a la vez y el tablero en escritorio y en móvil.
+También el cofre de cada etapa, los tesoros y las notas, la exportación en Markdown, y la
+descarga y el borrado de los datos propios. La orientación con IA está construida y
+probada contra un modelo simulado: se encenderá cuando pase su conjunto de evaluación.
 
-Este repositorio se actualiza en hitos: cuando exista el programa, estas imágenes se
-cambiarán por capturas reales.
+Cada regla del producto tiene su comprobación automática: pruebas unitarias y de
+integración, pruebas de mutación del filtro de banderas y recorridos en un navegador real
+con comprobaciones de accesibilidad.
+
+Falta el despliegue: todavía no hay un sitio público. Este repositorio se actualiza en
+hitos.
 
 ## Licencia
 
@@ -123,4 +151,4 @@ Kishidō es un proyecto independiente. No está afiliado ni avalado por ninguna 
 de práctica ni por ningún organismo de certificación; los nombres de terceros pertenecen
 a sus propietarios.
 
-© 2026 Rubén Agudelo Alzate.
+© 2026 Rubén Agudelo Alzate · Hecho en Medellín, Colombia.
