@@ -30,10 +30,10 @@ de práctica inventados.</sub>
 > documentation and a short focus guide, and keeps their findings as notes they can export
 > as Markdown. Spoiler-free AI guidance on pasted terminal output is built and tested
 > against a simulated model; it will be switched on once it passes its evaluation set. It
-> does not host labs, it never hands over the flag, and it only works on environments the
-> learner is authorized to practice on. Spanish-first, for desktop and mobile. Built with
-> Java 25, Spring Boot 4 and PostgreSQL. The first version is finished and tested locally;
-> it is not deployed yet.
+> does not host labs, it never hands over the flag, and every expedition starts with the
+> learner confirming they are authorized to practice on that environment. Spanish-first,
+> for desktop and mobile. Built with Java 25, Spring Boot 4 and PostgreSQL. The first
+> version is finished and tested locally; it is not deployed yet.
 
 ---
 
